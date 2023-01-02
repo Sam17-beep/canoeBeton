@@ -9,7 +9,7 @@ const Accueil: FunctionComponent<PropsWithChildren<HeaderProps>> = ({ }) => {
   return (
     <div style={parent}>
       <div >
-        <Image src="/../public/hero.png" alt="Hero image" width={3000} height={3000}
+        <Image src="/../public/Accueil/hero.webp" alt="Hero image" width={3000} height={3000}
         style={{ maxWidth: '100%', height: 'auto', }} object-fit={"cover"} />
       </div>
       
