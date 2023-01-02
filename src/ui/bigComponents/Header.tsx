@@ -1,10 +1,12 @@
-import Link from "next/link"
-import { FunctionComponent, PropsWithChildren } from "react"
+import Link from 'next/link'
+import { FunctionComponent, PropsWithChildren } from 'react'
 
 interface HeaderProps {
   current: string
 }
-const Header: FunctionComponent<PropsWithChildren<HeaderProps>> = ({ current }) => {
+const Header: FunctionComponent<PropsWithChildren<HeaderProps>> = ({
+  current,
+}) => {
   return (
     <div style={parent}>
       <Link href="/" style={current === "home" ? activeLinkStyle : linkStyle}>Accueil</Link>
@@ -41,4 +43,4 @@ const parent = {
   zIndex: "100",
 }
 
-export default Header;
+export default Header
