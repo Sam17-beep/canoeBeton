@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { FunctionComponent, PropsWithChildren } from 'react'
+import { CSSProperties, FunctionComponent, PropsWithChildren } from 'react'
 
 interface HeaderProps {
   current: string
@@ -30,7 +30,7 @@ const linkStyle = {
 }
 
 // css class for the parent div
-const parent = {
+const parent : CSSProperties | undefined = {
   display: "flex",
   justifyContent: "right",
   alignItems: "center",
