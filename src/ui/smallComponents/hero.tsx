@@ -8,9 +8,11 @@ const Hero: FunctionComponent<PropsWithChildren<HeaderProps>> = ({ }) => {
   return (
       <div style={parent}>
         <Image src="/../public/Accueil/hero.webp" alt="Hero image" width={3000} height={3000}
-            style={{ maxWidth: '100%', height: 'auto', }} object-fit={"cover"} />
-        <p style={title}>Canoë de Béton</p>
-        <p style={subtitle}>DE L&apos;UNIVERSITÉ LAVAL</p>
+        style={{ maxWidth: '100%', height: 'auto', }} object-fit={"cover"} />
+        <div style={text}>
+          <p style={title}>Canoë de Béton</p>
+          <p style={subtitle}>DE L&apos;UNIVERSITÉ LAVAL</p>
+        </div>
       </div>
   )
 }
@@ -23,17 +25,18 @@ const parent : CSSProperties | undefined  = {
   width: "100%",
 }
 
-const title : CSSProperties | undefined  = {
+const text: CSSProperties | undefined = {
   position: "absolute",
+  top: "10em",
+}
+
+const title : CSSProperties | undefined  = {
   fontSize: "6em",
   fontWeight: "bold",
   color: "white",
-  top: "1em",
 }
 
 const subtitle : CSSProperties | undefined = {
-  position: "absolute",
-  top: "4em",
   fontSize: "3em",
   color: "white",
 }
