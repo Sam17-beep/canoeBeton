@@ -7,8 +7,8 @@ interface HeaderProps {
 const Hero: FunctionComponent<PropsWithChildren<HeaderProps>> = ({ }) => {
   return (
       <div style={parent}>
-        <Image src="/../public/Accueil/hero.webp" alt="Hero image" width={3000} height={3000}
-        style={{ maxWidth: '100%', height: 'auto', }} object-fit={"cover"} />
+        <Image src="/../public/Accueil/hero.webp" alt="Hero image" width={1920} height={1080}
+        style={{ maxWidth: '100%', height: 'auto', minHeight: "10em", objectPosition: "0 100"}} object-fit={"cover"} />
         <div style={text}>
           <p style={title}>Canoë de Béton</p>
           <p style={subtitle}>DE L&apos;UNIVERSITÉ LAVAL</p>
