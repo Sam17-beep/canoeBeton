@@ -1,6 +1,7 @@
 .containerBox {
   margin: auto;
   align-items: top;
+  justify-content: center;
 }
 
 @media (min-width: 750px) {
@@ -10,9 +11,6 @@
     align-items: top;
     gap: 10px;
   }
-  .two {
-    flex: 2 1;
-  }
 }
 
 .one {
@@ -21,11 +19,13 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  max-width: 324px;
 }
 
 .two {
   flex: 2 1;
   margin-bottom: 10px;
+  max-width: 650px;
 }
 
 .titre {
