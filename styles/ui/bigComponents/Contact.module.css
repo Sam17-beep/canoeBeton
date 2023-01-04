@@ -1,0 +1,27 @@
+.containerBox {
+  display: flex;
+  margin: auto;
+  align-items: top;
+  gap: 10px;
+}
+
+.one {
+  flex: 1 1;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+}
+
+.two {
+  flex: 2 1;
+  border: 1px solid blue;
+}
+
+.titre {
+  font-size: 5vh;
+  font-weight: bold;
+}
+
+.sousTitre {
+  font-size: 3vh;
+}

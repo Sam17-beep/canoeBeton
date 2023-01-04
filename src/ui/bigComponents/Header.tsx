@@ -10,38 +10,66 @@ const Header: FunctionComponent<PropsWithChildren<HeaderProps>> = ({
 }) => {
   return (
     <div style={parent}>
-      <Link href="/" style={current === "home" ? activeLinkStyle : linkStyle}>Accueil</Link>
-      <Link href="/event" style={current === "event" ? activeLinkStyle : linkStyle}>Événement</Link>
-      <Link href="/team" style={current === "team" ? activeLinkStyle : linkStyle}>Équipe</Link>
-      <Link href="/tournament" style={current === "tournament" ? activeLinkStyle : linkStyle}>Historique</Link>
-      <Link href="/sponsor" style={current === "sponsor" ? activeLinkStyle : linkStyle}>Partenaire</Link>
-      <Link href="/contact" style={current === "contact" ? activeLinkStyle : linkStyle}>Nous joindre</Link>
+      <Link href="/" style={current === 'home' ? activeLinkStyle : linkStyle}>
+        Accueil
+      </Link>
+      <Link
+        href="/event"
+        style={current === 'event' ? activeLinkStyle : linkStyle}
+      >
+        Événement
+      </Link>
+      <Link
+        href="/team"
+        style={current === 'team' ? activeLinkStyle : linkStyle}
+      >
+        Équipe
+      </Link>
+      <Link
+        href="/tournament"
+        style={current === 'tournament' ? activeLinkStyle : linkStyle}
+      >
+        Historique
+      </Link>
+      <Link
+        href="/sponsor"
+        style={current === 'sponsor' ? activeLinkStyle : linkStyle}
+      >
+        Partenaire
+      </Link>
+      <Link
+        href="/contact"
+        style={current === 'contact' ? activeLinkStyle : linkStyle}
+      >
+        Nous joindre
+      </Link>
     </div>
   )
 }
 
 const activeLinkStyle = {
-  color: "blue",
-  fontWeight: "bold",
-  fontSize: "1.2em",
+  color: 'blue',
+  fontWeight: 'bold',
+  fontSize: '1.2em',
+  textDecoration: 'none',
 }
 
 const linkStyle = {
-  fontSize: "1.1em",
+  fontSize: '1.1em',
+  textDecoration: 'none',
 }
 
 // css class for the parent div
-const parent : CSSProperties | undefined = {
-  display: "flex",
-  justifyContent: "right",
-  alignItems: "center",
-  backgroundColor: "#f5f8fa",
-  width: "100%",
-  height: "40px",
-  gap: "15px",
-  padding: "0 30px",
-  position: "fixed",
-  zIndex: "100",
+const parent: CSSProperties | undefined = {
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  backgroundColor: '#f5f8fa',
+  width: '100%',
+  height: '40px',
+  gap: '15px',
+  zIndex: '100',
+  marginBottom: '20px',
 }
 
 export default Header
