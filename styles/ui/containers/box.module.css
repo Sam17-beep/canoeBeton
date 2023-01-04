@@ -1,3 +1,11 @@
 .box {
-  background-color: #fefefe;
+  background-color: #f0f0f0;
+  border: 1px #e0e0e0 solid;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  position: relative;
+}
+
+.complexSousTitre {
+  cursor: pointer;
 }
