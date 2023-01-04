@@ -1,0 +1,14 @@
+[  
+  {    
+    "name": "Alice",    
+    "role": "Developer",    
+    "description": "Alice is a skilled software developer.",    
+    "imagePath": "/../public/image/Team/AdamTremblay.webp"  
+    },  
+    {    
+      "name": "Bob",    
+      "role": "Designer",    
+      "description": "Bob is a talented graphic designer.",    
+      "imagePath": "/../public/image/Team/AdamTremblay.webp"   
+    }
+]

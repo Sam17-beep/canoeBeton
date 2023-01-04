@@ -4,6 +4,7 @@ import { CSSProperties, FunctionComponent, PropsWithChildren } from 'react'
 interface HeaderProps {
   current: string
 }
+
 const Header: FunctionComponent<PropsWithChildren<HeaderProps>> = ({
   current,
 }) => {
