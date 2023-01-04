@@ -10,7 +10,7 @@ const ComplexBox: FunctionComponent<PropsWithChildren<ComplexBoxProps>> = ({
   children,
   title,
 }) => {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(true)
   const clickHandler = () => {
     setOpen(!open)
   }
