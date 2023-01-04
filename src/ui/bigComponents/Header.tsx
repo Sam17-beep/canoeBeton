@@ -65,13 +65,12 @@ const parent: CSSProperties | undefined = {
   justifyContent: 'center',
   alignItems: 'center',
   backgroundColor: '#f5f8fa',
-  width: '100%',
   height: '40px',
   gap: '15px',
   zIndex: '100',
-  marginBottom: '20px',
   position: 'relative',
   borderRadius: '4px',
+  margin: '10px',
 }
 
 export default Header
