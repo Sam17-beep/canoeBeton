@@ -3,6 +3,7 @@ import { FunctionComponent, PropsWithChildren } from 'react'
 import styles from 'styles/ui/bigComponents/Contact.module.css'
 import SimpleBox from '../containers/SimpleBox'
 import ComplexBox from '../containers/ComplexBox'
+import Socials from '../smallComponents/Socials'
 
 interface ContactProps {}
 
@@ -10,7 +11,7 @@ const Contact: FunctionComponent<PropsWithChildren<ContactProps>> = ({}) => {
   return (
     <>
       <div className={styles.color}></div>
-      <div>
+      <div className={styles.titreContainer}>
         <div className={styles.titre}>Nous joindre</div>
       </div>
       <div className={styles.containerBox}>
@@ -28,8 +29,14 @@ const Contact: FunctionComponent<PropsWithChildren<ContactProps>> = ({}) => {
           </SimpleBox>
         </div>
         <div className={styles.one}>
-          <ComplexBox title="Nos réseaux">Nos réseaux</ComplexBox>
-          <ComplexBox title="Faire un don">Faire un don</ComplexBox>
+          <ComplexBox title="Nos réseaux">
+            <Socials />
+          </ComplexBox>
+          <ComplexBox title="Faire un don">
+            Merci de votre intéret! Pour nous encourager, transmettez-nous un
+            chèque à l’ordre de l'<b>Université Laval</b>, pour
+            <b> Équipe de Canoë de béton</b>.
+          </ComplexBox>
         </div>
       </div>
     </>

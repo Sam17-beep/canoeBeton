@@ -7,8 +7,8 @@ const sponsor = () => {
   return (
     <>
       <Header current={'sponsor'} />
-      <Sponsor/>
-      <Footer/>
+      <Sponsor />
+      <Footer />
     </>
   )
 }

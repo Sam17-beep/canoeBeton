@@ -71,6 +71,7 @@ const parent: CSSProperties | undefined = {
   position: 'relative',
   borderRadius: '4px',
   margin: '10px',
+  boxShadow: '3px 3px rgb(0 0 0 / 0.4)',
 }
 
 export default Header
