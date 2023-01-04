@@ -7,11 +7,11 @@ interface HeaderProps {
 const Hero: FunctionComponent<PropsWithChildren<HeaderProps>> = ({ }) => {
   return (
       <div style={parent}>
-        <Image src="/../public/image/Accueil/hero.webp" alt="Hero image" width={1920} height={1080}
+        <Image src="/../public/Accueil/hero.webp" alt="Hero image" width={1920} height={1080}
         style={{ maxWidth: '100%', height: 'auto', minHeight: "10em", objectPosition: "0 100"}} object-fit={"cover"} />
         <div style={text}>
-          <p style={title}>Canoë de Béton</p>
-          <p style={subtitle}>DE L&apos;UNIVERSITÉ LAVAL</p>
+          <span style={title}>Canoë de Béton</span>
+          <span style={subtitle}>DE L&apos;UNIVERSITÉ LAVAL</span>
         </div>
       </div>
   )
@@ -26,6 +26,8 @@ const parent : CSSProperties | undefined  = {
 }
 
 const text: CSSProperties | undefined = {
+  display: "flex",
+  flexDirection: "column",
   position: "absolute",
   top: "10em",
 }

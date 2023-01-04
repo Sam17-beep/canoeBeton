@@ -15,9 +15,10 @@ const Accueil: FunctionComponent<PropsWithChildren<HeaderProps>> = ({ }) => {
 }
 
 const parent : CSSProperties | undefined  = {
-  marginTop: "50px",
+  paddingTop: "200px",
   flexDirection: "column",
   display: "flex",
+  gap: "50px",
   justifyContent: "center",
   alignItems: "center",
   width: "100%",

@@ -16,7 +16,6 @@ export default function Home() {
       <main>
         <Header current={'home'} />
         <Accueil />
-        <Footer />
       </main>
     </>
   )

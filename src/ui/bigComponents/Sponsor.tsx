@@ -8,8 +8,6 @@ interface HeaderProps {
 const Sponsor: FunctionComponent<PropsWithChildren<HeaderProps>> = ({ }) => {
   return (
     <div style={parent}>
-      <Hero />
-      <Information/>
     </div>
   )
 }

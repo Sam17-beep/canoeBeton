@@ -70,6 +70,8 @@ const parent: CSSProperties | undefined = {
   gap: '15px',
   zIndex: '100',
   marginBottom: '20px',
+  position: "relative",
+  top: "0",
 }
 
 export default Header

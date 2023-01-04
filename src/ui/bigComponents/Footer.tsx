@@ -29,8 +29,6 @@ const Footer: FunctionComponent<PropsWithChildren<HeaderProps>> = () => {
 
 // css class for the parent div
 const parent : CSSProperties | undefined  = {
-  position: "fixed",
-  bottom: "0",
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
