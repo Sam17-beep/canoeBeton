@@ -18,7 +18,9 @@ const Team: FunctionComponent<PropsWithChildren> = ({  }) => {
   useEffect(() => {
     async function fetchData() {
       const res = await fetch('/../public/json/team.json');
+      console.log('reponse');
       const data = await res.json();
+      console.log('data', data);
       setMembers(data);
     }
     fetchData();
@@ -27,6 +29,9 @@ const Team: FunctionComponent<PropsWithChildren> = ({  }) => {
   return (
     <div>
       <p>ALLO</p>
+      {members.map((member) => (
+        <span key={member.name}>{member.name} </span>
+      ))}
       {members.map((member) => (
         <MemberCard member={member} key={member.name} />
       ))}
