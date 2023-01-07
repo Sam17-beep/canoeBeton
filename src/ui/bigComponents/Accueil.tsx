@@ -1,14 +1,15 @@
-import { CSSProperties, FunctionComponent, PropsWithChildren } from "react"
+import { FunctionComponent, PropsWithChildren } from "react"
 import Hero from "../smallComponents/Hero";
 import Information from "../smallComponents/Information";
 import Footer from "./Footer";
+import styles from 'styles/ui/bigComponents/Accueil.module.css'
 
 interface HeaderProps {
 }
 
 const Accueil: FunctionComponent<PropsWithChildren<HeaderProps>> = ({ }) => {
   return (
-    <div style={parent}>
+    <div className={styles.page}>
       <Hero />
       <Information />
       <Footer/>
@@ -16,15 +17,6 @@ const Accueil: FunctionComponent<PropsWithChildren<HeaderProps>> = ({ }) => {
   )
 }
 
-const parent : CSSProperties | undefined  = {
-  paddingTop: "200px",
-  flexDirection: "column",
-  display: "flex",
-  gap: "50px",
-  justifyContent: "center",
-  alignItems: "center",
-  width: "100%",
-  height: "40px",
-}
+
 
 export default Accueil;
