@@ -1,6 +1,6 @@
 import { CSSProperties, FunctionComponent, PropsWithChildren } from "react"
-import Hero from "../smallComponents/hero"
-import Information from "../smallComponents/information"
+import Hero from "../smallComponents/Hero"
+import Information from "../smallComponents/Information"
 
 interface HeaderProps {
 }

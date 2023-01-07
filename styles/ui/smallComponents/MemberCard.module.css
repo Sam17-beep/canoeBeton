@@ -1,0 +1,27 @@
+.card{
+  background-color: lightgrey;
+  gap: 5px;
+  padding: 5px;
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  width: min-content;
+}
+
+.card span{
+  white-space: pre-line;
+  padding: 0 20px;
+}
+
+.name{
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.role{
+  font-size: 1.4rem;
+}
+
+.description{
+  font-size: 1rem;
+}

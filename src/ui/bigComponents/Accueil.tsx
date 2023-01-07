@@ -1,6 +1,7 @@
 import { CSSProperties, FunctionComponent, PropsWithChildren } from "react"
-import Hero from "../smallComponents/hero";
-import Information from "../smallComponents/information";
+import Hero from "../smallComponents/Hero";
+import Information from "../smallComponents/Information";
+import Footer from "./Footer";
 
 interface HeaderProps {
 }
@@ -9,7 +10,8 @@ const Accueil: FunctionComponent<PropsWithChildren<HeaderProps>> = ({ }) => {
   return (
     <div style={parent}>
       <Hero />
-      <Information/>
+      <Information />
+      <Footer/>
     </div>
   )
 }
@@ -24,7 +26,5 @@ const parent : CSSProperties | undefined  = {
   width: "100%",
   height: "40px",
 }
-
-
 
 export default Accueil;

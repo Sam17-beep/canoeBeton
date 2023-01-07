@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { FunctionComponent, PropsWithChildren } from 'react'
-
+import styles from 'styles/ui/smallComponents/MemberCard.module.css'
 
 interface Member {
   name: string;
@@ -14,13 +14,14 @@ interface HeaderProps {
 }
 
 
-const MemberCard: FunctionComponent<PropsWithChildren<HeaderProps>>= ({ member }) => {
+const MemberCard: FunctionComponent<PropsWithChildren<HeaderProps>> = ({ member }) => {
+  console.log(member.description);
   return (
-    <div>
-      <Image src={member.imagePath} alt={member.name} />
-      <p>Name: {member.name}</p>
-      <p>Role: {member.role}</p>
-      <p>Description: {member.description}</p>
+    <div className={styles.card}>
+      <Image src={member.imagePath} alt={member.name} width={300} height={300} />
+      <span className={styles.name}>{member.name}</span>
+      <span className={styles.role}>{member.role}</span>
+      <span className={styles.description}>{member.description}</span>
     </div>
   );
 };

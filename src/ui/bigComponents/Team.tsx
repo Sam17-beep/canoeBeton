@@ -1,6 +1,5 @@
-import Image from 'next/image'
 import { FunctionComponent, PropsWithChildren, useEffect, useState } from 'react';
-import MemberCard from '../smallComponents/memberCard';
+import MemberCard from '../smallComponents/MemberCard';
 
 interface Member {
   name: string;
@@ -17,10 +16,8 @@ const Team: FunctionComponent<PropsWithChildren> = ({  }) => {
 
   useEffect(() => {
     async function fetchData() {
-      const res = await fetch('/../public/json/team.json');
-      console.log('reponse');
+      const res = await fetch('/api/fetch?name=team');
       const data = await res.json();
-      console.log('data', data);
       setMembers(data);
     }
     fetchData();
@@ -28,12 +25,8 @@ const Team: FunctionComponent<PropsWithChildren> = ({  }) => {
   
   return (
     <div>
-      <p>ALLO</p>
-      {members.map((member) => (
-        <span key={member.name}>{member.name} </span>
-      ))}
-      {members.map((member) => (
-        <MemberCard member={member} key={member.name} />
+      {members.map(member => (
+        <MemberCard member={member} key={member.name}/>
       ))}
     </div>
   );
