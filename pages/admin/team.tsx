@@ -1,6 +1,6 @@
 
 import React from 'react'
-import AddTeamMember from '../../src/ui/bigComponents/AddTeamMember'
+import AddTeamMember from '../../src/ui/admin/AddTeamMember'
 
 const team = () => {
   return (

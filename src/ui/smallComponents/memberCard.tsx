@@ -1,13 +1,7 @@
 import Image from 'next/image'
 import { FunctionComponent, PropsWithChildren } from 'react'
 import styles from 'styles/ui/smallComponents/MemberCard.module.css'
-
-interface Member {
-  name: string;
-  role: string;
-  description: string;
-  imagePath: string;
-}
+import { Member } from '../bigComponents/Team';
 
 interface HeaderProps {
   member: Member;

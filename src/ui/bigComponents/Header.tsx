@@ -26,8 +26,8 @@ const Header: FunctionComponent<PropsWithChildren<HeaderProps>> = ({
         Équipe
       </Link>
       <Link
-        href="/tournament"
-        style={current === 'tournament' ? activeLinkStyle : linkStyle}
+        href="/historique"
+        style={current === 'historique' ? activeLinkStyle : linkStyle}
       >
         Historique
       </Link>

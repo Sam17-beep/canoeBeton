@@ -2,7 +2,7 @@ import { FunctionComponent, PropsWithChildren, useEffect, useState } from 'react
 import MemberCard from '../smallComponents/MemberCard';
 import styles from 'styles/ui/bigComponents/Team.module.css';
 
-interface Member {
+export interface Member {
   name: string;
   role: string;
   description: string;
@@ -12,7 +12,6 @@ interface Member {
 
 
 const Team: FunctionComponent<PropsWithChildren> = ({  }) => {
-
   const [members, setMembers] = useState<Member[]>([]);
 
   useEffect(() => {

@@ -1,0 +1,13 @@
+.page_title{
+    font-size: 4rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
