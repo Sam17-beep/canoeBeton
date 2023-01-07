@@ -12,7 +12,6 @@ export default async function historique(
 ) {
   if (req.method === 'GET') {
     const fileContents = fs.readFile("json/historique.json", 'utf8', (err, data) => {
-
       if (err)
         res.status(500);
       res.status(200).json(JSON.parse(data));

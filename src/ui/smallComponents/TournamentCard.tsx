@@ -11,8 +11,8 @@ interface HeaderProps {
 const TournamentCard: FunctionComponent<PropsWithChildren<HeaderProps>> = ({ tournament }) => {
   return (
     <div className={styles.card}>
-      <Image src={"/../public/Historique/"+tournament.imagePath} alt={tournament.name} width={300} height={300} />
-      <span>{tournament.name} - {tournament.date}</span>
+      <Image src={"/../public/Historique/" + tournament.imagePath + "main.webp"} alt={tournament.name} width={368} height={314} />
+      <span className={styles.tournament_name}>{tournament.name} - {tournament.date}</span>
     </div>
   );
 };
