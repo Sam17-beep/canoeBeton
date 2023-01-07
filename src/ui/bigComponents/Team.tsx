@@ -1,5 +1,6 @@
 import { FunctionComponent, PropsWithChildren, useEffect, useState } from 'react';
 import MemberCard from '../smallComponents/MemberCard';
+import styles from 'styles/ui/bigComponents/Team.module.css';
 
 interface Member {
   name: string;
@@ -16,7 +17,7 @@ const Team: FunctionComponent<PropsWithChildren> = ({  }) => {
 
   useEffect(() => {
     async function fetchData() {
-      const res = await fetch('/api/fetch?name=team');
+      const res = await fetch('/api/team');
       const data = await res.json();
       setMembers(data);
     }
@@ -24,10 +25,12 @@ const Team: FunctionComponent<PropsWithChildren> = ({  }) => {
   }, []);
   
   return (
-    <div>
-      {members.map(member => (
-        <MemberCard member={member} key={member.name}/>
-      ))}
+    <div className={styles.page}>
+      <div className={styles.team_container}>
+        {members.map(member => (
+          <MemberCard member={member} key={member.name}/>
+        ))}
+      </div>
     </div>
   );
 };
