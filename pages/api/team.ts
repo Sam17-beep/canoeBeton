@@ -41,7 +41,7 @@ async function post(
         name: req.body.name,
         role: req.body.role,
         description: req.body.description,
-        imagePath: req.body.imagePath+".webp"
+        imagePath: "Respos/"+req.body.imagePath + ".webp"
       });
 
       // Write the updated array back to the JSON file

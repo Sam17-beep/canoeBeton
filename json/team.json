@@ -232,5 +232,83 @@
     "role": "Membre de l'équipe",
     "description": "1e année en génie civil\n1e année dans l'équipe du canoë de béton",
     "imagePath": "ZoikBélanger.webp"
+  },
+  {
+    "name": "Abderrahmane Abbar",
+    "role": "Co-Responsable Conception",
+    "description": "3e année en génie civil\n3e année dans l'équipe du canoë de béton",
+    "imagePath": "Respos/AbderrahmaneAbbar.webp"
+  },
+  {
+    "name": "Antony Beaulieu",
+    "role": "Responsable Rame",
+    "description": "2e année en génie civil\n2e année dans l'équipe du canoë de béton",
+    "imagePath": "Respos/AntonyBeaulieu.webp"
+  },
+  {
+    "name": "Arnaud Bergeron",
+    "role": "Responsable Esthétique",
+    "description": "4e année en génie civil\n4e année dans l'équipe du canoë de béton",
+    "imagePath": "Respos/ArnaudBergeron.webp"
+  },
+  {
+    "name": "Christof Pouliot",
+    "role": "Co-Responsable Construction",
+    "description": "2e année en génie civil\n2e année dans l'équipe du canoë de béton\n",
+    "imagePath": "Respos/ChristofPouliot.webp"
+  },
+  {
+    "name": "Cyrille Gagnon",
+    "role": "Co-Responsable Construction",
+    "description": "4e année en génie civil\n4e année dans l'équipe du canoë de béton\n",
+    "imagePath": "Respos/CyrilleGagnon.webp"
+  },
+  {
+    "name": "Éloi Bergeron",
+    "role": "Responsable R&D",
+    "description": "4e année en génie civil\n4e année dans l'équipe du canoë de béton",
+    "imagePath": "Respos/ÉloiBergeron.webp"
+  },
+  {
+    "name": "Marie-Pier Blackburn",
+    "role": "Responsable Mélanges",
+    "description": "3e année en génie civil\n3e année dans l'équipe du canoë de béton\n",
+    "imagePath": "Respos/Marie-PierBlackburn.webp"
+  },
+  {
+    "name": "Mathieu Bordeleau",
+    "role": "Co-Capitaine",
+    "description": "3e année en génie civil\n3e année dans l'équipe du canoë de béton",
+    "imagePath": "Respos/MathieuBordeleau.webp"
+  },
+  {
+    "name": "Maxime Lemieux",
+    "role": "Co-Responsable Construction",
+    "description": "4e année en génie civil\n4e année dans l'équipe du canoë de béton",
+    "imagePath": "Respos/MaximeLemieux.webp"
+  },
+  {
+    "name": "Mireille Jean",
+    "role": "Responsable Multimédia",
+    "description": "4e année en génie civil\n4e année dans l'équipe du canoë de béton",
+    "imagePath": "Respos/MireilleJean.webp"
+  },
+  {
+    "name": "Sophie Corbeil",
+    "role": "Co-Capitaine, Responsable Administration et Académique",
+    "description": "3e année en génie civil\n3e année dans l'équipe du canoë de béton",
+    "imagePath": "Respos/SophieCorbeil.webp"
+  },
+  {
+    "name": "Taha Essiba",
+    "role": "Co-Responsable Conception",
+    "description": "3e année en génie civil\n2e année dans l'équipe du canoë de béton",
+    "imagePath": "Respos/TahaEssiba.webp"
+  },
+  {
+    "name": "Tristan Nouchokgwe",
+    "role": "Responsable Socio",
+    "description": "4e année en génie civil\n4e année dans l'équipe du canoë de béton",
+    "imagePath": "Respos/TristanNouchokgwe.webp"
   }
 ]

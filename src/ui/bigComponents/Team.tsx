@@ -26,10 +26,22 @@ const Team: FunctionComponent<PropsWithChildren> = ({  }) => {
   
   return (
     <div className={styles.page}>
+      <span className={styles.title}>Nos responsable</span>
       <div className={styles.team_container}>
-        {members.map(member => (
-          <MemberCard member={member} key={member.name}/>
-        ))}
+        {members.map(member =>
+          member.role !== "Membre de l'équipe" ? (
+            <MemberCard member={member} key={member.name} afficherRole/>
+          ) : null
+        )}
+      </div>
+
+      <span className={styles.title}>Nos membres</span>
+      <div className={styles.team_container}>
+        {members.map(member =>
+          member.role === "Membre de l'équipe" ? (
+            <MemberCard member={member} key={member.name} />
+          ) : null
+        )}
       </div>
     </div>
   );
