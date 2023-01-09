@@ -70,7 +70,7 @@ const parent: CSSProperties | undefined = {
   zIndex: '100',
   position: 'relative',
   borderRadius: '4px',
-  margin: '10px',
+  margin: '10px 10px 30px 10px',
   boxShadow: '3px 3px rgb(0 0 0 / 0.4)',
 }
 
