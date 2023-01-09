@@ -38,9 +38,7 @@ const Sponsor: FunctionComponent<PropsWithChildren> = ({}) => {
         {sponsors.map((sponsor) =>
           sponsor.categorie === 'mosaique' ? (
             <SponsorCard sponsor={sponsor} isMosaique={true} />
-          ) : (
-            <SponsorCard sponsor={sponsor} isMosaique={false} />
-          )
+          ) : null
         )}
       </div>
     </div>
