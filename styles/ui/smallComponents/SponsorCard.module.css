@@ -2,3 +2,24 @@
   width: 80%;
   height: auto;
 }
+
+.imageContainer {
+  max-width: 55%;
+}
+.responsiveSmaller {
+  width: 100%;
+  height: auto;
+}
+
+.card {
+  display: flex;
+  border: 1px black solid;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 2px;
+  justify-content: space-between;
+}
+
+.description {
+  max-width: 55%;
+}

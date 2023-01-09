@@ -23,7 +23,18 @@ const sponsorCard: FunctionComponent<PropsWithChildren<SponsorCardProps>> = ({
           className={styles.responsive}
         />
       ) : (
-        <div>No</div>
+        <div className={styles.card}>
+          <div className={styles.description}>{sponsor.description}</div>
+          <div className={styles.imageContainer}>
+            <Image
+              src={'/../public/Sponsors/' + sponsor.imagePath}
+              width={1000}
+              height={1000}
+              alt={'logo sponsor'}
+              className={styles.responsiveSmaller}
+            />
+          </div>
+        </div>
       )}
     </div>
   )
