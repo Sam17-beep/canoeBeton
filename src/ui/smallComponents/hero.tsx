@@ -18,6 +18,7 @@ const Hero: FunctionComponent<PropsWithChildren<HeaderProps>> = ({}) => {
           objectPosition: '0 100',
         }}
         object-fit={'cover'}
+        priority={true}
       />
       <div style={text}>
         <span style={title}>Canoë de Béton</span>
