@@ -50,12 +50,12 @@ const Header: FunctionComponent<PropsWithChildren<HeaderProps>> = ({
 const activeLinkStyle = {
   color: 'blue',
   fontWeight: 'bold',
-  fontSize: '1.2em',
+  // fontSize: '1.2em',
   textDecoration: 'none',
 }
 
 const linkStyle = {
-  fontSize: '1.1em',
+  // fontSize: '1.1em',
   textDecoration: 'none',
 }
 
@@ -63,15 +63,17 @@ const linkStyle = {
 const parent: CSSProperties | undefined = {
   display: 'flex',
   justifyContent: 'center',
+  gap: '15px',
   alignItems: 'center',
   backgroundColor: '#f5f8fa',
   height: '40px',
-  gap: '15px',
+
   zIndex: '100',
   position: 'relative',
   borderRadius: '4px',
   margin: '10px 10px 30px 10px',
   boxShadow: '3px 3px rgb(0 0 0 / 0.4)',
+  overflow: 'auto',
 }
 
 export default Header

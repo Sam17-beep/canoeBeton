@@ -60,9 +60,9 @@
   opacity: 60%;
   height: 40%;
   width: 100%;
+
   top: 0px;
   left: 0px;
-  right: 0px;
 }
 /* 
 .image {
@@ -75,3 +75,6 @@
   left: 0px;
   right: 0px;
 } */
+.page {
+  margin: 20px;
+}
