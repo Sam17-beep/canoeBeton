@@ -3,7 +3,7 @@ import fs from 'fs';
 
 export default async function tournament(req: NextApiRequest, res: NextApiResponse){
   const { tournament } = req.query;
-  fs.readFile('json/historique.json', 'utf8', (err, data) => {
+  fs.readFile('src/json/historique.json', 'utf8', (err, data) => {
     if (err) {
       res.status(500).send(err);
       return;
