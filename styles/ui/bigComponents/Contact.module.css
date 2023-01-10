@@ -44,6 +44,7 @@
   z-index: 100;
   position: relative;
   width: 974px;
+  /* margin-bottom: 200px; */
 }
 
 .sousTitre {
@@ -63,3 +64,14 @@
   left: 0px;
   right: 0px;
 }
+/* 
+.image {
+  background-color: blue;
+  position: absolute;
+  opacity: 60%;
+  height: 80%;
+  width: 80%;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+} */

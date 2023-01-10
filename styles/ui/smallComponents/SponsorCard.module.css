@@ -19,6 +19,7 @@
   padding: 5px;
   margin: 2px;
   justify-content: space-between;
+  background-color: rgba(26, 132, 237, 0.523);
 }
 
 .description {

@@ -4,6 +4,7 @@ import styles from 'styles/ui/bigComponents/Contact.module.css'
 import SimpleBox from '../containers/SimpleBox'
 import ComplexBox from '../containers/ComplexBox'
 import Socials from '../smallComponents/Socials'
+import Image from 'next/image'
 
 interface ContactProps {}
 
@@ -11,6 +12,13 @@ const Contact: FunctionComponent<PropsWithChildren<ContactProps>> = ({}) => {
   return (
     <>
       <div className={styles.color}></div>
+      {/* <Image
+        src={'/../public/Contact/groupPicture.webp'}
+        alt={'Photo de groupe'}
+        width={3000}
+        height={1500}
+        className={styles.image}
+      /> */}
       <div className={styles.titreContainer}>
         <div className={styles.titre}>Nous joindre</div>
       </div>
