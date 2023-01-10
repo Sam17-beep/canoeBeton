@@ -1,6 +1,6 @@
 import { FunctionComponent, PropsWithChildren } from 'react'
-import Hero from '../smallComponents/Hero'
-import Information from '../smallComponents/Information'
+import Hero from '../smallComponents/hero'
+import Information from '../smallComponents/information'
 import Footer from './Footer'
 import styles from 'styles/ui/bigComponents/Accueil.module.css'
 
