@@ -9,7 +9,8 @@ export default async function tournament(req: NextApiRequest, res: NextApiRespon
       return;
     }
     const tournaments = JSON.parse(data);
-    const result = tournaments.find(t => t.name === tournament);
+  
+    const result = tournaments.find((t:any) => t.name === tournament);
     if (!result) {
       res.status(404).send({ error: 'Tournament not found' });
       return;
